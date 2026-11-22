@@ -3,32 +3,12 @@
   <head>
     <meta charset="utf-8">
     <!-- file: docs/index.html -->
-    <!--
-      PÁGINA PERSONAL — portada del portafolio
-      ──────────────────────────────────────────────────────────────
-      Si ya hiciste tu perfil en el Laboratorio 1, trae aquí su
-      contenido. Las rutas de esta página ya están ajustadas al
-      portafolio; no copies las del laboratorio, que usaban ../../
-
-      Qué editar:
-        • El <title>, el <link> a tu hoja de estilos y la descripción.
-        • Nombre, tagline y todos los marcadores con la forma {{TEXTO}}.
-        • Las cuatro rutas de la fotografía (src y srcset).
-      Qué NO cambiar:
-        • Estructura (header / aside / main / footer).
-        • El enlace "Mis entregas" (./modulos/index.html).
-        • Rutas a los logos institucionales (./assets/img/).
-
-      Nombres de archivo, si te llamas Juan Pérez:
-        assets/css/about-perez-juan.css
-        assets/img/foto-perez-juan-{160,320,480,640}.webp
-      Borra este comentario cuando termines.
-    -->
+    
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Nombre Apellidos — Perfil</title>
+    <title>Isaac Barba — Perfil</title>
 
     <!-- CSS específico de esta página -->
-    <link rel="stylesheet" href="./assets/css/about-apellidos-nombre.css">
+    <link rel="stylesheet" href="./assets/css/about-barba-isaac.css">
 
     <!-- Descripción breve (práctica de metadatos/SEO) -->
     <meta
@@ -51,8 +31,8 @@
           </div>
 
           <!-- EDITA: nombre y tagline -->
-          <h1 class="nombre">Nombre Apellidos</h1>
-          <p class="tagline">Estudiante de Desarrollo de Software · {{GRUPO}}-{{NN}}</p>
+          <h1 class="nombre">Isaac Barba</h1>
+          <p class="tagline">Estudiante de Desarrollo de Software · 4G122-03</p>
         </div>
 
         <!-- Logos institucionales (no cambiar rutas) -->
@@ -72,15 +52,15 @@
       <aside class="sidebar">
         <figure class="perfil">
           <img
-            src="./assets/img/foto-apellidos-nombre-480.webp"
+            src="./assets/img/foto-barba-isaac-480.webp"
             srcset="
-              ./assets/img/foto-apellidos-nombre-160.webp 160w,
-              ./assets/img/foto-apellidos-nombre-320.webp 320w,
-              ./assets/img/foto-apellidos-nombre-480.webp 480w,
-              ./assets/img/foto-apellidos-nombre-640.webp 640w
+              ./assets/img/foto-barba-isaac-160.webp 160w,
+              ./assets/img/foto-barba-isaac-320.webp 320w,
+              ./assets/img/foto-barba-isaac-480.webp 480w,
+              ./assets/img/foto-barba-isaac-640.webp 640w
             "
             sizes="(max-width: 700px) 128px, 160px"
-            alt="Nombre Apellidos, estudiante de LDGS UTP FISC Veraguas"
+            alt="Isaac Barba, estudiante de LDGS UTP FISC Veraguas"
             width="160"
             height="160"
             loading="lazy"
@@ -94,13 +74,10 @@
           <h2>Contacto</h2>
           <ul class="lista-contacto">
             <li>
-              <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+              <a href="mailto:isaacbarba@mail.com">Correo</a>
             </li>
             <li>
-              <a target="_blank" rel="noopener noreferrer" href="{{LINKEDIN}}">LinkedIn</a>
-            </li>
-            <li>
-              <a target="_blank" rel="noopener noreferrer" href="{{GITHUB}}">GitHub</a>
+              <a target="_blank" rel="noopener noreferrer" href="306319445+isaac-barba@users.noreply.github.com">GitHub</a>
             </li>
             <li>
               <a href="./modulos/index.html">Mis entregas del curso</a>
@@ -115,9 +92,10 @@
           <h3>Lenguajes</h3>
           <div class="chips">
             <span class="chip">Java</span>
-            <span class="chip">JavaScript</span>
-            <span class="chip">Python</span>
+            <span class="chip">C</span>
+            <span class="chip">C#</span>
             <span class="chip">SQL</span>
+            <span class="chip">C++</span>
           </div>
 
           <h3>Frameworks & Librerías</h3>
@@ -136,16 +114,12 @@
           <h3>Herramientas</h3>
           <div class="chips">
             <span class="chip">Git</span>
-            <span class="chip">Docker</span>
-            <span class="chip">Postman</span>
+            <span class="chip">Microsoft 360</span>
+            <span class="chip">Canva</span>
             <span class="chip">Figma</span>
           </div>
 
-          <h3>Metodologías</h3>
-          <div class="chips">
-            <span class="chip">Scrum</span>
-            <span class="chip">Kanban</span>
-          </div>
+          
         </section>
       </aside>
 
@@ -153,7 +127,10 @@
       <main class="contenido">
         <section class="resumen card">
           <h2>Acerca de mí</h2>
-          <p>{{RESUMEN_BREVE_ELEVATOR_PITCH}}</p>
+          <p> Estudiante de desarrollo y gestión de software con alta capacidad de aprendizaje y una
+actitud optimista. Poseo habilidades destacadas en comunicación interpersonal y atención
+al cliente. Me caracterizo por mi responsabilidad en el cumplimiento de asignaciones y mi
+entusiasmo por iniciar mi trayectoria laboral aportando valor y eficiencia a la organización.</p>
         </section>
 
         <!-- Duplica <article.proyecto> por cada proyecto -->
@@ -162,56 +139,23 @@
           <div class="proyectos-flex">
             <article class="proyecto">
               <header class="proyecto-head">
-                <h3>{{NOMBRE_PROYECTO}}</h3>
+                <h3>Proyecto de gestión de mascotas en ingeniería de software </h3>
                 <div class="proyecto-links">
-                  <a target="_blank" rel="noopener noreferrer" href="{{URL_GITHUB}}">Código</a>
-                  <a target="_blank" rel="noopener noreferrer" href="{{URL_DEMO}}">Demo</a>
-                </div>
               </header>
-              <p>{{DESCRIPCION_PROYECTO}}</p>
-              <p class="rol"><strong>Rol:</strong> {{ROL}}</p>
-              <p class="tech"><strong>Tecnologías:</strong> {{TECNOLOGIAS}}</p>
+              <p>Se tratará de un sistema que ayudará a las personas y a casas de refigio de animales a poder localizar con mayor comididad a todos os animales que tienen disponible</p>
+              <p class="rol"><strong>Rol:</strong>Desarrollador</p>
+              <p class="tech"><strong>Tecnologías:</strong> Java, SQL</p>
             </article>
           </div>
         </section>
+       <section class="proyectos card">
+         <h2> Educación</h2>
+         <ul class="listado-simple">
+           <li>Licenciatura en Desarrollo y Gestión de Software <strong>
+            - UTP, centro Regional de Veraguas (2024 - presente) </li>
+         </ul>
+           </strong>
 
-        <section class="experiencia card">
-          <h2>Experiencia</h2>
-          <ul class="timeline">
-            <li>
-              <div class="item">
-                <h3>{{CARGO}} — {{ORGANIZACION}}</h3>
-                <span class="meta">{{FECHA}}</span>
-                <p>{{RESPONSABILIDADES_LOGROS}}</p>
-              </div>
-            </li>
-          </ul>
-        </section>
-
-        <section class="educacion card">
-          <h2>Educación</h2>
-          <ul class="listado-simple">
-            <li>
-              <strong>Licenciatura en Desarrollo y Gestión de Software</strong>
-              — UTP, Centro Regional de Veraguas ({{ANIO_INICIO}}–{{ANIO_FIN}})
-            </li>
-          </ul>
-        </section>
-
-        <section class="certificaciones card">
-          <h2>Certificaciones y Cursos</h2>
-          <ul class="listado-simple">
-            <li>{{CERTIFICACION_1}}</li>
-            <li>{{CURSO_1}}</li>
-          </ul>
-        </section>
-
-        <section class="extra card">
-          <h2>Logros · Artículos · Intereses</h2>
-          <ul class="listado-simple">
-            <li>{{LOGRO_O_ARTICULO}}</li>
-          </ul>
-        </section>
       </main>
 
       <footer class="footer">
